@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BMI</title>
+    </head>
+    <body>
+        <style>
+            body{
+                align-items: center;
+                text-align: center;
+            }
+            h1{
+                color: rgb(255, 77, 6);
+                text-align: center;
+                font-size: 555%;
+                border: 44%;
+            }
+            h1:hover{
+                color: rgb(4, 255, 0);
+                text-align: left;
+                
+
+            }
+            #h,#w{
+                font-family: 'Helvetica', serif;
+    width: 10%;
+    font-size: 20px;
+    padding: 12px 20px;
+    border-color: #05ff86;
+    margin: 8px 0;
+    border: #05ff86;
+    border: 2px solid #767474;
+
+            }
+            button{
+                color: #ffffff;
+                background-color: rgb(66, 236, 117);
+                padding: 1%;
+                color: rgb(255, 255, 255);
+                border-radius: 14%;
+            }
+            #result{
+                font-size: 444%;
+                color:rgb(234, 138, 13)
+            }
+            #result:hover{
+                font-size: 155%;
+                
+                transform:rotate3d();
+            }
+            
+
+        </style>
+    <h1>BMI</h1>
+    <br>
+    <br>
+   
+<br>
+    <input type="number"id='h'placeholder="height">
+    <br>
+    <br>
+   
+    <input type="number"id='w'value='Weight(in Kg)'placeholder="weight">
+    <br>
+    <br>
+    <button onclick="cal()">submit</button>
+    <br>
+    <p id="result"></p>
+    <script>
+       
+        function cal(){
+            let h=document.getElementById('h').value;
+        let w=document.getElementById('w').value;
+        document.getElementById('result').innerHTML="Your BMI is "+(w/(h*h));
+
+        }   </script>
+        </body>
+
+</html>
